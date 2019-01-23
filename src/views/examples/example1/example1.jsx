@@ -5,13 +5,14 @@ import Subtitle from '../../../components/Subtitle'
 import Text from '../../../components/Text'
 import Image from '../../../components/Image'
 import Video from '../../../components/Video'
-
+import TopBar from '../../topbar';
 
 export default class example1 extends Component {
 
     render() {
         return (
             <React.Fragment>
+                <TopBar />
                 <Title>This is the title!</Title>
 
                 <Subtitle> This is a subtitle!</Subtitle>
@@ -32,7 +33,6 @@ export default class example1 extends Component {
                     height="400"
                     src="https://www.youtube.com/embed/tgbNymZ7vqY"
                 />
-
             </React.Fragment>
         )
     }
