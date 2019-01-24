@@ -6,15 +6,15 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    InputGroup,
     Input,
-    Col
+    InputGroup,
+    InputGroupAddon,
+    Button
 } from 'reactstrap';
+import Image from '../../components/Image';
+import microsysLogo from '../images/marca_microsys.png';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class TopBar extends Component {
     constructor(props) {
@@ -33,46 +33,30 @@ export default class TopBar extends Component {
         return (
             <React.Fragment>
                 <Navbar color="light" light expand="md">
-                    <NavbarBrand href="/">documentação</NavbarBrand>
-
+                    <NavbarBrand href="/">
+                        <Image src={microsysLogo} alt="MICROSYS®" style={{ width: '220px' }} />
+                    </NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
-
-                    <Col>
-                        <InputGroup>
-                            <Input
-                                className="form-control ds-input"
-                                placeholder="Pesquisar doc."
-                                bsSize="md"
-                            />
-                        </InputGroup>
-                    </Col>
 
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
 
                             <NavItem>
-                                <NavLink href="/example1">Exemples</NavLink>
+                                <InputGroup>
+                                    <Input
+                                        className="form-control ds-input"
+                                        placeholder="Pesquisar na document..."
+                                    />
+                                    <InputGroupAddon addonType="append">
+                                        <Button
+                                            color="secondary"
+                                            onClick={() => {}}
+                                        >
+                                            <FontAwesomeIcon icon={faSearch} />
+                                        </Button>
+                                    </InputGroupAddon>
+                                </InputGroup>
                             </NavItem>
-
-                            <NavItem>
-                                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-                            </NavItem>
-
-                            <UncontrolledDropdown nav inNavbar>
-
-                                <DropdownToggle outline nav caret>Produtos</DropdownToggle>
-
-                                <DropdownMenu right>
-                                    <DropdownItem href="/example1">Msys PDV</DropdownItem>
-                                    <DropdownItem href="/example1">Msys Comercial</DropdownItem>
-                                    <DropdownItem href="/example1">Msys Industrial</DropdownItem>
-
-                                    <DropdownItem divider />
-
-                                    <DropdownItem href="/example1">Msys ERP</DropdownItem>
-                                </DropdownMenu>
-
-                            </UncontrolledDropdown>
                         </Nav>
                     </Collapse>
                 </Navbar>
