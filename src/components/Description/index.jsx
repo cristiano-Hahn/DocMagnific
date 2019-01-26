@@ -7,7 +7,7 @@ export default class Description extends Component {
             <Container>
                 <Row>
                     <Col>
-                        <h5 className="md-description">
+                        <h5 className="md-description" {...this.props}>
                             {this.props.children}
                         </h5>
                     </Col>
