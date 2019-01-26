@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TopBar from '../views/topbar';
-import Body from './body';
+import TopBar from '../components/topbar';
+import Body from './initialPage';
 
 export default class Main extends Component {
     render() {

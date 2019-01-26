@@ -6,9 +6,7 @@ export default class Title extends Component {
             <Container>
                 <Row>
                     <Col>
-                        <h1 className="md-title">
-                            {this.props.children}
-                        </h1>
+                        {<h1 className="display-4">{this.props.children}</h1>}
                     </Col>
                 </Row>
             </Container>

@@ -6,9 +6,7 @@ import Text from '../../../components/Text'
 import Image from '../../../components/Image'
 import Video from '../../../components/Video'
 
-import TopBar from '../../topbar';
-
-import TopMenu from '../../../layout/TopMenu';
+import TopBar from '../../../components/topbar'
 
 export default class example1 extends Component {
 
@@ -17,9 +15,6 @@ export default class example1 extends Component {
             <React.Fragment>
 
                 <TopBar />
-                <TopMenu>
-
-                </TopMenu>
                 
             
                 <Title>This is the title!</Title>

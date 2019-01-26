@@ -12,16 +12,14 @@ import {
     Button
 } from 'reactstrap';
 import Image from '../../components/Image';
-import microsysLogo from '../images/marca_microsys.png';
+import microsysLogo from '../../layout/images/marca_microsys.png'
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default class TopBar extends Component {
     constructor(props) {
         super(props);
-
         this.toggle = this.toggle.bind(this);
-
         this.state = { isOpen: false };
     }
 
