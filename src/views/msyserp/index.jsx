@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Image from '../../components/Image';
-import { Container, Jumbotron, Row, Col, Button } from 'reactstrap';
+import { Container, Row, Col, Button } from 'reactstrap';
 import logoDocs from '../../layout/images/Msys_Docse_256x256.png';
 import Description from '../../components/Description';
 import Subtitle from '../../components/Subtitle';
