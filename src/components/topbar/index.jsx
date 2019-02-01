@@ -12,7 +12,7 @@ import {
     Button
 } from 'reactstrap';
 import Image from '../../components/Image';
-import microsysLogo from '../../layout/images/marca_microsys.png'
+import microsysLogo from '../../layout/images/marca_microsys.png';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

@@ -20,15 +20,15 @@ class MsysERP extends Component {
     render() {
         return (
             <Frame>
-                <Subtitle className="text-center" >Msys ERP - Sistema para gestão</Subtitle>
+                <Subtitle className="text-center">Msys ERP - Sistema para gestão</Subtitle>
                 <hr />
                 <Container>
                     <Row>
                         <Col sm='12' md='12' lg='6' xl='6' className='d-flex align-items-center'>
                             <Image src={logoDocs} alt="MICROSYS®" style={productStyle} />
-                            <Description style={{ color: '#6c757d', textAlign: 'justify' }}>
-                                " O Javascript é uma das raras linguagens que você não precisa aprender, basta copiar de um mané que quebrou a cabeça uma semana para a construir meia dúzia de linhas."
-                                    </Description>
+                            <Description>
+                                "O Javascript é uma das raras linguagens que você não precisa aprender, basta copiar de um mané que quebrou a cabeça uma semana para a construir meia dúzia de linhas."
+                            </Description>
                         </Col>
                         <Col sm='12' md='12' lg='6' xl='6'>
                             <Video
@@ -46,7 +46,7 @@ class MsysERP extends Component {
                             <CardText>Cadastre produtos para realizar vendas, controlar o estoque e outros pó muito loucos</CardText>
                             <Button onClick={() => this.props.history.push('/msyserp/cadastros/produtos')}>Vamos lá!</Button>
                         </Card>
-                        <Card >
+                        <Card>
                             <CardTitle>Cadastrando pessoas</CardTitle>
                             <CardText>Cadastre clientes, fornecedores, vendedores e até você mesmo, não é legal?</CardText>
                             <Button>Vamos lá!</Button>

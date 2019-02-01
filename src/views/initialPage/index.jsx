@@ -33,8 +33,7 @@ class InitialPage extends Component {
                         <FontAwesomeIcon icon={faBookOpen} size="6x" />
 
                         <Title>Documentação</Title>
-                        <Description>Manual completo de todos os nossos produtos</Description>
-
+                        <Description textAlign='center'>Manual completo de todos os nossos produtos</Description>
                         <hr />
                         <Container style={{ marginTop: '25px' }}>
                             <Row>

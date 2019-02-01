@@ -12,8 +12,7 @@ class App extends Component {
     return (
       <Switch>
         <Route exact path="/" component={initialPage} />
-        <Route exact path="/example1" component={example1} />[
-          <Route exact path="/msyserp" component={MsysERP} />
+        <Route exact path="/msyserp" component={MsysERP} />
         <Route exact path="/msyserp/cadastros/produtos" component={MsysERP_Cadastros_Produtos} />
 
       </Switch>

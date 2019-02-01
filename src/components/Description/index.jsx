@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Container, Row, Col } from 'reactstrap';
+import { H5 } from './styles';
 
 export default class Description extends Component {
     render() {
@@ -7,12 +8,17 @@ export default class Description extends Component {
             <Container>
                 <Row>
                     <Col>
-                        <h5 className="md-description" {...this.props}>
+                        <H5 {...this.props}>
                             {this.props.children}
-                        </h5>
+                        </H5>
                     </Col>
                 </Row>
             </Container>
         )
     }
+}
+
+H5.defaultProps = {
+    textAlign: 'justify',
+    color: '#6c757d'
 }
