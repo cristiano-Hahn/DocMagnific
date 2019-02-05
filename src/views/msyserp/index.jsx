@@ -49,7 +49,7 @@ class MsysERP extends Component {
                         <Card>
                             <CardTitle>Cadastrando pessoas</CardTitle>
                             <CardText>Cadastre clientes, fornecedores, vendedores e até você mesmo, não é legal?</CardText>
-                            <Button>Vamos lá!</Button>
+                            <Button  onClick={() => this.props.history.push('/msyserp/cadastros/pessoas')}>Vamos lá!</Button>
                         </Card>
                         <Card>
                             <CardTitle>Cadastrando tributações</CardTitle>
